@@ -17,15 +17,25 @@
 
 
 ## Config Commands
-### $ git init
+#### $ git init
 > Git 저장소를 초기화한다. 이 명령어를 입력하면 파일에 .git/이라는 디렉토리가 생성된다.
-### $ git status
+#### $ git status
 > Git 저장소 내의 현재 상태를 확인한다.
 > 브랜치의 정보 제공
 > 수정된 파일의 목록
 > 커밋되지 않은 파일  
  **(git의 관심 밖이기 때문에 제거하거나 편집해도 문제가 되지 않는다.)**
-### $ git add [file_name]
+#### $ git add [file_name]
 > 특정 파일을 Git 저장소의 Staging area로 올리고 싶을 때 사용한다.
-### $ nano [file_name]
+#### $ nano [file_name]
 > 특정 파일(텍스트)의 편집기이다.
+#### $ git add .
+> 디렉토리에 있는 모든 파일을 커밋한다.
+#### $ git rm -- cached [file_name]
+> 입력한 파일을 다시 **unstaging** 한다.
+#### $ git nano .gitignore
+> 명령어가 아니다
+> 처음엔 내용이 없는 빈 파일이지만, 텍스트 안에 파일 이름을 입력하면 그 파일은 영구히 제외된다.
+#### git commit -m "commit message"
+> 모든 작업을 마무리하고 수정한 상태로 새로운 **snapshot**으로 저장한다.
+> **"commit message"** 에는 주석처럼 무엇에 관한 내용인지 적는 것이 좋다.
